@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_edit"
+        android:iconTint="#171F47"
+        android:title="Tahrirlash" />
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_delete"
+        android:iconTint="#171F47"
+        android:title="O‘chirish" />
+    <item
+        android:id="@+id/copy_message"
+        android:icon="@drawable/ic_copy"
+        android:iconTint="#171F47"
+        android:title="Nusxalash" />
+    <item
+        android:id="@+id/share_message"
+        android:icon="@drawable/ic_share"
+        android:iconTint="#171F47"
+        android:title="Ulashish" />
+</menu>

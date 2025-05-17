@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_230sdp"
+    android:layout_height="@dimen/_110sdp"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_loginpage"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_15sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bu xabarni o'chirishni rostdan istaysizmi? Ikkala tomon  uchun o‘chirsinmi? "
+        android:textColor="#F4D8DB"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_delete_both"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#05DCF8"
+        android:text="Ikkala tomon uchun o‘chirish"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#EFE7E7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bekor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bekor qilish"
+            android:textColor="#42C748" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/och"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O'chirish"
+            android:textColor="#E62222" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "319607593231",
+    "project_id": "codiallessons",
+    "storage_bucket": "codiallessons.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319607593231:android:d90174960b1301ef3f067a",
+        "android_client_info": {
+          "package_name": "com.samurai.chatme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3f8ANDnQH0kGA8TWnnX3NR1dQVQMYN3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

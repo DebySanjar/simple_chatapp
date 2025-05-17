@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NotChat</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">319607593231-t0il4ogktiq0gcp8747s6rrt0pdnluum.apps.googleusercontent.com</string>
+</resources>

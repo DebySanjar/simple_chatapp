@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_5"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fm.LoginFragment">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46sdp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_240sdp"
+        android:layout_gravity="center"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_120sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:strokeColor="#56A9DC"
+        app:strokeWidth="@dimen/_2sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:text="Yaqin do'stlaringiz shu yerda agar siz ham shu yerda bo'lsangiz !  Suhbatta sobitlik..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:textColor="#696C6D"
+        android:textStyle="normal" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginBottom="@dimen/_19sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:shadowColor="#EBE9E9"
+            android:shadowRadius="2"
+            android:text="Welcome to Chatme"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#2B2D30"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnGoogleSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="#DFDFDF"
+            android:elevation="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
