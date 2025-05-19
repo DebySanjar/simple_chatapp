@@ -59,7 +59,10 @@ class LoginFragment : Fragment() {
             .requestEmail()
             .build()
 
+
         googleSignInClient = GoogleSignIn.getClient(requireActivity(), gso)
+
+
 
         binding.btnGoogleSignIn.setOnClickListener {
             typingAnimation.stop()

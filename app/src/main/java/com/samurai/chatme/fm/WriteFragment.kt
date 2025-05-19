@@ -119,9 +119,9 @@ class WriteFragment : Fragment() {
                 val m = MessageModel(
                     message = newText,
                     senderId = senderId,
-                    receiverId = receiverId,
                     senderName = currentUserName,
-                    isSeen = false// yoki sizda mavjud bo‘lsa, o‘zingizning qiymat
+                    receiverId = receiverId,
+                    kordim = false
                 )
                 database.child("chats").child(chatRoomId).push().setValue(m)
                 binding.edtMessage.setText("")
@@ -296,8 +296,8 @@ class WriteFragment : Fragment() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (msgSnap in snapshot.children) {
                     val message = msgSnap.getValue(MessageModel::class.java) ?: continue
-                    if (message.receiverId == senderId && !message.isSeen) {
-                        msgSnap.ref.child("isSeen").setValue(true)
+                    if (message.receiverId == senderId && !message.kordim) {
+                        msgSnap.ref.child("kordim").setValue(true)
                     }
                 }
             }

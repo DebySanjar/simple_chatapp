@@ -4,12 +4,12 @@ import com.google.firebase.database.PropertyName
 
 
 data class MessageModel(
-    val message: String = "",
-    val senderId: String = "",
-    val senderName: String = "",
+    var message: String = "",
+    var senderId: String = "",
+    var senderName: String = "",
 
-    val receiverId: String = "",
+    var receiverId: String = "",
 
-    val isSeen: Boolean = false, // O'qilgan yoki yo'q
+    var kordim: Boolean = false,
 )
 

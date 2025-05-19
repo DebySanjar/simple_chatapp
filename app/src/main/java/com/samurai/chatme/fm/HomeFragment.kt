@@ -109,7 +109,7 @@ class HomeFragment : Fragment() {
                                     val expectedChatRoomId =
                                         getChatRoomId(message.senderId, message.receiverId)
                                     if (chatRoomId == expectedChatRoomId) {
-                                        if (message.isSeen) {
+                                        if (message.kordim) {
                                             // Agar isSeen true bo‘lsa, unreadMap ni 0 ga tenglashtiramiz
                                             unreadMap[message.senderId] = 0
                                             Log.d(
